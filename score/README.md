@@ -5,15 +5,15 @@
 
 ## Si on veut juste tester :
 ```bash
-sdt clean compile
-sdt test
+sbt clean compile
+sbt test
 ```
 
 ## Si on vraiment run et GET & POST
 
 ```bash
-sdt clean compile
-sdt run
+sbt clean compile
+sbt run
 ```
 
 ### GET `/scores`
@@ -28,5 +28,9 @@ Body JSON attendu :
   "score": 1200,
   "difficulty": "hard"
 }
+
+### DELETE `/scores`
+supprime tous les scores stockés en mémoire
+utile pour repartir a zero lors des tests
 
 ```
